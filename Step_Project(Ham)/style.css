@@ -33,6 +33,10 @@
     margin-right: 21px;
     font-size: 16px;   
 }
+.nav-item:hover{
+    padding: 51px 0;
+    border-bottom: 2px solid blue;
+}
 .logo-text-container{
     display:flex;
     align-items: center;
@@ -316,12 +320,13 @@
 .our-amazing-block-items{
     height: 220px;
     position: relative;
+    transition: 0.7s;
 }
 
 .our-amazing-block-items:hover .hover{
    position: absolute;
    width: 100%;
-   transition: 3s;
+  
    height: 100%;
    background-color: #E9EDEF;
    display: flex;
@@ -330,7 +335,7 @@
 }
 .hover{
     display: none;
-    transition: 3s;
+    transition: 0.7s;
 }
 .icon{
     padding: 0 100px 25px;
@@ -492,15 +497,16 @@
     align-items:center;
 }
 .hide{
-    opacity: 1;
-    animation-name: a1;
-    animation-duration: 1s;
+    display: none;
 }
-@keyframes a1{
-    to{
-        opacity: 0;
-        min-width: 0;
-        min-height: 0;
-    }
+.slider.slider-for,.slider.slider-nav{
+    max-width: 305px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+  .slider-for img{height: 301px;} 
+  .slider-nav .item {width: 88px;height: 88px;margin: 0 10px; overflow: hidden; cursor: pointer;} 
+  .slider-nav{margin-left:-10px; margin-right: -10px}
 
