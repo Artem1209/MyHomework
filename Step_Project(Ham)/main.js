@@ -66,7 +66,7 @@ for(let i=1;i<=4;i++){
 
 }
 
-$(function filterCategories(){
+$(function(){
     let filter = $("[data-q]");
     filter.on("click",function(){
 
@@ -93,3 +93,21 @@ $(function filterCategories(){
        
     });
 });
+ 
+
+$('.slider-for').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    centerMode: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
+}); 
